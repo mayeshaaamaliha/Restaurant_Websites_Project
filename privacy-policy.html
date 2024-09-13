@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation container">
+                <div class="logo_container">
+                    <img src="logo.png" alt="logo" />
+                </div>
+                <div class="bar_icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="privacy-policy">
+            <h1>Privacy Policy</h1>
+            <p>This Privacy Statement aims to assure our clients and other individuals that we are observing the appropriate level of personal data protection in compliance with the standards prescribed by Republic Act No. 10173, otherwise known as the “Data Privacy Act”.</p>
+            
+            <h2>Personal Information to be Collected</h2>
+            <ul>
+                <li>Personal contact information which includes your name, address, email address, phone number, or any other information that would allow Golden Aurora to contact you;</li>
+                <li>Demographic information which includes your gender, date of birth, age, civil status, nationality, etc.; and</li>
+                <li>Non-personal information such as those provided by your device which may include your IP address, geolocation, operating system, browser type and version, and other machine identifiers, etc.</li>
+            </ul>
+            
+            <h2>Collection Method</h2>
+            <p>Your personal information may be collected, directly or indirectly, through any of the following means:</p>
+            <ul>
+                <li>Forms, agreements and other similar or related documents you submitted;</li>
+                <li>Use and log-in to Golden Aurora’s website when you choose to fill out a ‘Contact Us’ form;</li>
+                <li>During availment of Golden Aurora’s services;</li>
+                <li>Communications and correspondences with our staff, whether in writing, verbally, or thru electronic means;</li>
+                <li>Footages from our CCTV cameras; and</li>
+                <li>Personal Information may also be obtained from third parties and other sources which have obtained your prior consent for disclosure or when Golden Aurora is legally allowed to acquire such information.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_container container">
+            <div class="footer_logo">
+                <img src="logo.png" alt="logo" />
+            </div>
+            <div class="link_lists">
+                <h3>Main Links</h3>
+                <ul>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">New Order</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">News & Blogs</a></li>
+                </ul>
+            </div>
+            <div class="link_lists">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="news_letter">
+                <h3>Subscribe</h3>
+                <input type="email" placeholder="Enter your Email..." />
+                <h3>Follow Us</h3>
+                <div class="icon_container">
+                    <div class="icon" data-url="https://facebook.com">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                    <div class="icon" data-url="https://twitter.com">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon" data-url="https://instagram.com">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon" data-url="https://youtube.com">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.icon').forEach(icon => {
+            icon.addEventListener('click', () => {
+                const url = icon.getAttribute('data-url');
+                window.open(url, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>

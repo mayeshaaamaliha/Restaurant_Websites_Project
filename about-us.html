@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation container">
+                <div class="logo_container">
+                    <img src="logo.png" alt="logo" />
+                </div>
+                <div class="bar_icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="about-us">
+            <h1>Our Story</h1>
+            <p>Opened in partnership with Divina Law founder and Managing Partner Atty. Nilo Divina, Aurora is a spirited bistro that pays homage to robust Asian flavors and heartwarming homestyle classics. “Aurora is named after my mother, whose homecooked meals brought everyone together.” shares Divina. “This is my first foray into F&B, and I hope to bring lots of care and attention to detail to this restaurant to honor her. As a lawyer, there’s also a level of perfection and excellence in execution that I always strive for.”</p>
+            
+            <p>Find us in the corporate facade of Makati City’s Pacific Star Building–there’s an upbeat dining floor, an outdoor patio accented with lush greenery, a full wall display of wine, a private dining room, and a bar. We designed each spot to fit the bill for fashionable hangouts with friends, corporate catch-ups, or romantic dates–and we’re excited to welcome you into our space.</p>
+            
+            <p>Our menu showcases modern variations of classically-rooted, regional Asian cooking guided by our chefs’ Asian-leaning backgrounds, and draws inspiration from nostalgic memories of meals made at home. What is special to note is that the menu was also designed to bring out the talent and personality of their team members.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_container container">
+            <div class="footer_logo">
+                <img src="logo.png" alt="logo" />
+            </div>
+            <div class="link_lists">
+                <h3>Main Links</h3>
+                <ul>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">New Order</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="link_lists">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="news_letter">
+                <h3>Subscribe</h3>
+                <input type="email" placeholder="Enter your Email..." />
+                <h3>Follow Us</h3>
+                <div class="icon_container">
+                    <div class="icon" data-url="https://facebook.com">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                    <div class="icon" data-url="https://twitter.com">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon" data-url="https://instagram.com">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon" data-url="https://youtube.com">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.icon').forEach(icon => {
+            icon.addEventListener('click', () => {
+                const url = icon.getAttribute('data-url');
+                window.open(url, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
